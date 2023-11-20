@@ -26,7 +26,7 @@ window.addEventListener('scroll', () => {
 
 
 
-const positionsY = ['10vh','25vh','10vh','30vh','50vh','80vh','100vh','150vh','200vh','250vh',      '10vh','70vh','110vh','170vh','230vh','260vh']; // vertical
+const positionsY = ['10vh','25vh','10vh','30vh','50vh','80vh','100vh','150vh','200vh','250vh',      '10vh','70vh','110vh','170vh','230vh','261vh']; // vertical
 const positionsX = ['14vw','35vw','60vw','80vw','10vw','2vw', '18vw', '8vw',  '20vw', '4vw',        '90vw','75vw','90vw','80vw','70vw',  '90vw']; // horziontal
 
 const numberOfCubes = 16;
