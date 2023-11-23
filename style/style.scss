@@ -34,12 +34,36 @@ body::-webkit-scrollbar {
     }
 }
 
-@keyframes spin {
+@keyframes spin1 {
   from {
     transform: rotateX(0) rotateY(0);
   }
   to {
     transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes spin2 {
+  from {
+    transform: rotateX(0) rotateY(0);
+  }
+  to {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+}
+@keyframes spin3 {
+  from {
+    transform: rotateX(0) rotateY(0);
+  }
+  to {
+    transform: rotateX(180deg) rotateY(360deg);
+  }
+}
+@keyframes spin4 {
+  from {
+    transform: rotateX(0) rotateY(0);
+  }
+  to {
+    transform: rotateX(260deg) rotateY(180deg);
   }
 }
 
@@ -119,6 +143,11 @@ body::-webkit-scrollbar {
     #FAQ-accordion-card{
         background: linear-gradient(#af67e9, #6565e7);
         color: #ffffff;
+        font-weight: 700;
+    }
+    #age-calculator-app{
+        background-color: #f0f0f0;
+        color: #854cff;
         font-weight: 700;
     }
 

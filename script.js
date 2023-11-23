@@ -42,8 +42,17 @@ for (let i = 0; i < numberOfCubes; i++) {
     face.classList.add(['top', 'bottom', 'right', 'left', 'front', 'back'][j]);
     cube.appendChild(face);
   }
-
-  cube.style.animation = `spin 20s infinite linear`;
+  let rng = getRandomInt(1, 4); // Generates a random integer between 1 and 10
+  
+  if(rng == 1){
+    cube.style.animation = `spin1 20s infinite linear`;
+  } else if(rng == 2){
+    cube.style.animation = `spin2 25s infinite linear`;
+  } else if(rng == 3){
+    cube.style.animation = `spin3 20s infinite linear`;
+  } else{ cube.style.animation = `spin4 15s infinite linear`; 
+  }
+  
 
   if (parseInt(positionsX[i]) > 400) {
     cube.style.background = 'green';
@@ -55,4 +64,10 @@ for (let i = 0; i < numberOfCubes; i++) {
   cube.style.top = `${positionsY[i]}`;
   cube.style.left = `${positionsX[i]}`;
   container.appendChild(cube);
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
